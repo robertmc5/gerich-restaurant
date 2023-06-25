@@ -1,0 +1,80 @@
+.app__newsletter {
+  width: 100%;
+  padding: 2rem 4rem;
+  border: 1px solid var(--color-golden);
+  background-color: var(--color-black);
+}
+
+.app__newsletter-heading {
+  text-align: center;
+}
+
+.app__newsletter-heading > p,
+.app__newsletter-input {
+  padding: 2rem 0;
+}
+
+.app__newsletter-input input {
+  width: 620px;
+  padding: 0.75rem 1rem;
+  margin-right: 2rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 16px;
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: var(--color-golden);
+  opacity: 1;
+}
+
+.app__newsletter-input button {
+  width: max-content;
+}
+
+/* Very Large Devices ======================== */
+@media screen and (min-width: 2000px) {
+  .app__newsletter-input input {
+    font-size: 37px;
+    padding: 1.125rem 1.5rem;
+  }
+}
+
+/* Medium Devices ============================ */
+@media screen and (max-width: 990px) {
+  .app__newsletter-input input {
+    width: 100%;
+  }
+}
+
+/* Small Devices ============================= */
+@media screen and (max-width: 680px) {
+  .app__newsletter {
+    border: none;
+  }
+  .app__newsletter-input {
+    flex-direction: column;
+  }
+  .app__newsletter-input input {
+    margin-right: 0;
+  }
+  .app__newsletter-input button {
+    margin-top: 2rem;
+  }
+}
+
+/* Very Small Devices ======================== */
+@media screen and (max-width: 450px) {
+  .app__newsletter {
+    padding: 0;
+  }
+  .app__newsletter-heading > p {
+  padding: 1rem 0;
+  }
+  .app__newsletter-input input {
+    width: 90%;
+  }
+}
